@@ -19,15 +19,15 @@ def using_shift(array)
 end
 
 def shift_with_args(array)
-  array.pop(2)
+  array.shift(2)
 end
 
 def using_concat(array1, array2)
   array1.concat(array2)
 end
 
-def using_insert(array)
-  array.pop(3)
+def using_insert(array, element)
+  array.insert(element)
 end
 
 def using_uniq(array)
@@ -43,5 +43,5 @@ def using_delete(array, string)
 end
 
 def using_delete_at(array, index)
-  array.delete(index)
+  array.slice(index)
 end
